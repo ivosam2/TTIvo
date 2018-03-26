@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<html>
+<head>
+  <title>Prueba Firebase</title>
+  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+
+  <script>
+      // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC3IzhAMmqA-R6QWNb5HRE0e1hCPU7G0sU",
+      authDomain: "prueba-219c5.firebaseapp.com",
+      databaseURL: "https://prueba-219c5.firebaseio.com",
+      projectId: "prueba-219c5",
+      storageBucket: "prueba-219c5.appspot.com",
+      messagingSenderId: "611785904714"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <script src="index.js"></script>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>Id :</td>
+      <td><input type="text" name="id" id="user_id"></td>
+    </tr>
+    <tr>
+      <td>Nombre: </td>
+      <td><input type="text" name="username" id="user_name"></td>
+    </tr>
+    <tr>
+      <td>Cubículo: </td>
+      <td><input type="text" name="usercubiculo" id="user_cubiculo"></td>
+    </tr>
+    <tr>
+      <td>Horario de atención: </td>
+      <td><input type="text" name="userhorario" id="user_horario"></td>
+    </tr>
+    <tr>
+      <td>E-mail: </td>
+      <td><input type="text" name="useremail" id="user_email"></td>
+    </tr>
+    <tr>
+      <td>Teléfono: </td>
+      <td><input type="text" name="usertelefono" id="user_telefono"></td>
+    </tr>
+     <tr>
+      <td>Página WEB: </td>
+      <td><input type="text" name="userwebpage" id="user_webpage"></td>
+    </tr>
+    <tr>
+      <td>Materias impartidas: </td>
+      <td><input type="text" name="usermaterias" id="user_materias"></td>
+    </tr>
+    <tr>
+      <td>Trabajos Terminales Dirigidos: </td>
+      <td><input type="text" name="usertts" id="user_tts"></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <input type="button" value="Save" onclick="save_user()">
+        <input type="button" value="Update" onclick="update_user()">
+        <input type="button" value="Delete" onclick="delete_user()">
+      </td>
+    </tr>
+  </table>
+
+  <h3>User list</h3>
+    <table id="tbl_users_list">
+      <tr>
+        <td> #ID </td>
+        <td> NOMBRE </td>
+        <td> CUBICULO </td>
+      </tr>
+    </table>
+
+    <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+    <button onclick="logout()">Logout</button>
+  </div>
+</body>
+</html>
+
