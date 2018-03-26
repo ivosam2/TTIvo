@@ -6,7 +6,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     //document.getElementById("user_div").style.display = "block";/**/
     //document.getElementById("login_div").style.display = "none";
 
-    window.location = "file:///Users/ivosam2/Downloads/firebaseWebLogin/otra.html";
+    window.location = "file:///Users/ivosam2/Documents/GitHub/TTIvo/otra.html";
 
     var user = firebase.auth().currentUser;
 
@@ -50,7 +50,7 @@ function login(){
 
 function logout(){
   firebase.auth().signOut();
-  window.location = "file:///Users/ivosam2/Downloads/firebaseWebLogin/index.html"
+  window.location = "file:///Users/ivosam2/Documents/GitHub/TTIvo/index.html"
 }
 
 var tblUsers = document.getElementById('tbl_users_list');
