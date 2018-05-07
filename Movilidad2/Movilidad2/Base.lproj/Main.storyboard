@@ -136,11 +136,98 @@
                     </navigationItem>
                     <connections>
                         <outlet property="gestionarConvocatoriasTableView" destination="mrR-0k-Qgk" id="NSD-bj-qhm"/>
+                        <segue destination="mDX-sl-0Bj" kind="show" identifier="goToSelection2" id="xGh-Ej-Mm6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rZH-WE-c0h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2466.666666666667" y="102.71739130434783"/>
+        </scene>
+        <!--Consulta de Convocatoria-->
+        <scene sceneID="TCL-82-dZ7">
+            <objects>
+                <viewController id="mDX-sl-0Bj" customClass="ConsultarAdminViewController" customModule="Movilidad2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9LV-DE-a63">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5dO-Ic-Iav">
+                                <rect key="frame" x="182" y="64" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Universidades Participantes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5F-8y-lCG">
+                                <rect key="frame" x="20" y="169" width="218" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Convocatoria:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCx-qI-4kT">
+                                <rect key="frame" x="20" y="287" width="106" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resultados:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9R-4A-WeI">
+                                <rect key="frame" x="20" y="419" width="90" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CLQ-QX-gJv">
+                                <rect key="frame" x="20" y="198" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1fS-gn-OGd">
+                                <rect key="frame" x="20" y="316" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UM2-QL-u6L">
+                                <rect key="frame" x="20" y="448" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Qv-9e-byF">
+                                <rect key="frame" x="0.0" y="703" width="414" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Aceptar">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="aceptarButton:" destination="mDX-sl-0Bj" eventType="touchUpInside" id="ggD-Io-Zyc"/>
+                                    <segue destination="BuL-7g-hCM" kind="show" id="OBk-W5-ufe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="V52-wk-FER"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Consulta de Convocatoria" id="8Bt-JV-eOH"/>
+                    <connections>
+                        <outlet property="convocatoriaLabel" destination="fCx-qI-4kT" id="qK2-R0-4Ts"/>
+                        <outlet property="imagen2ImageView" destination="5dO-Ic-Iav" id="VrK-xZ-v4y"/>
+                        <outlet property="resultadosLabel" destination="s9R-4A-WeI" id="woa-ep-JdW"/>
+                        <outlet property="universidadesLabel" destination="s5F-8y-lCG" id="ZDn-Xq-hwO"/>
+                        <outlet property="urlConvoTextField" destination="1fS-gn-OGd" id="dgN-rd-GUs"/>
+                        <outlet property="urlResTextField" destination="UM2-QL-u6L" id="vsP-Wx-MAR"/>
+                        <outlet property="urlUniTextField" destination="CLQ-QX-gJv" id="X3a-0G-0de"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5vc-kM-u5U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2460.8695652173915" y="805.43478260869574"/>
         </scene>
         <!--Consulta de Convocatoria-->
         <scene sceneID="0bQ-hW-uY9">
@@ -151,16 +238,64 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E8Z-BG-4rq">
-                                <rect key="frame" x="182" y="82" width="50" height="50"/>
+                                <rect key="frame" x="182" y="64" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Universidades Participantes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVK-pr-7VD">
+                                <rect key="frame" x="20" y="149" width="218" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Convocatoria:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYF-ns-vG2">
+                                <rect key="frame" x="20" y="216" width="106" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resultados:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cat-u9-vUe">
+                                <rect key="frame" x="20" y="283" width="90" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgw-qG-rw1">
+                                <rect key="frame" x="264" y="148" width="27" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="universidades"/>
+                                <connections>
+                                    <action selector="universidadesButton:" destination="4XF-a6-EO0" eventType="touchUpInside" id="4Yn-9I-LB0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLJ-gt-NWt">
+                                <rect key="frame" x="264" y="215" width="29" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="convocatorias"/>
+                                <connections>
+                                    <action selector="convocatoriasButton:" destination="4XF-a6-EO0" eventType="touchUpInside" id="0Ia-RS-k7k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvW-cA-QnL">
+                                <rect key="frame" x="264" y="282" width="30" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="resultados"/>
+                                <connections>
+                                    <action selector="resultadosButton:" destination="4XF-a6-EO0" eventType="touchUpInside" id="3yw-7h-tC9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="mo0-nY-P8Y"/>
                     </view>
                     <navigationItem key="navigationItem" title="Consulta de Convocatoria" id="irW-4y-Use"/>
                     <connections>
+                        <outlet property="convocatoriaLabel" destination="nYF-ns-vG2" id="YiW-Ux-iyv"/>
+                        <outlet property="resultadosLabel" destination="Cat-u9-vUe" id="lIM-MH-0il"/>
                         <outlet property="tipoImageView" destination="E8Z-BG-4rq" id="4hB-ou-i7b"/>
+                        <outlet property="universidadesLabel" destination="nYF-ns-vG2" id="ldb-MH-d9c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y7n-T4-fdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -186,4 +321,12 @@
             <point key="canvasLocation" x="111" y="103"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="convocatorias" width="24" height="24"/>
+        <image name="resultados" width="24" height="24"/>
+        <image name="universidades" width="24" height="24"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="OBk-W5-ufe"/>
+    </inferredMetricsTieBreakers>
 </document>

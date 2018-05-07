@@ -13,7 +13,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet var convocatoriasTableView: UITableView!
     
-    var movilidadFecha = ["2018", "2017", "2016", "2015"]
+    var movilidadFecha = ["Agosto-Diciembre 2018", "Enero-Junio 2017", "Agosto-Diciembre 2017"]
     
     var movilidad = [
         Formulario(tipo: "nacional"),
@@ -35,6 +35,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Dispose of any resources that can be recreated.
     }
     
+    //Nos permite pasar a la pantalla de Consultar convocatorias y establece la palabra "atrás" en el navigation bar
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if let destination = segue.destination as? ConsultarViewController {
@@ -52,10 +53,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //        navigationItem.backBarButtonItem = backItem // This will show in the next view controller being pushed
 //    }
     
+    //Establece el número de secciones que habrá en la tabla
     func numberOfSections(in tableView: UITableView) -> Int {
         return movilidadFecha.count
     }
     
+    //Establece las propidades del encabezado de la sección
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let label = UILabel()
         label.text = movilidadFecha[section]
@@ -64,7 +67,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return label
     }
     
-    
+    //Muestra el número de filas por sección de acuerdo al número de cadenas que haya en el arreglo movilidad
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movilidad.count
     }
@@ -75,6 +78,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    //Establece a que pantalla ir al tocar alguna de las filas, en este caso usa el segue "goToSelection" que va a la consulta de la información de esa fila
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "goToSelection", sender: self)
     }

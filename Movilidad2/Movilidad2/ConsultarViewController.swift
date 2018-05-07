@@ -11,11 +11,31 @@ import Firebase
 
 class ConsultarViewController: UIViewController {
     
+    @IBOutlet weak var universidadesLabel: UILabel!
+    @IBOutlet weak var convocatoriaLabel: UILabel!
+    @IBOutlet weak var resultadosLabel: UILabel!
+    
     var movilidad : Formulario?
     
     @IBOutlet var tipoImageView: UIImageView!
     
-
+    @IBAction func universidadesButton(_ sender: Any) {
+        
+        UIApplication.shared.open(URL(string : "http://www.ipn.mx/cca/movilidad/Documents/ALUMNOS-IPN/MOVILIDAD-NACIONAL-NIVEL-SUPERIOR/IDs-MovNal2018-2.pdf")! as URL, options: [:], completionHandler: nil)
+        
+    }
+    @IBAction func convocatoriasButton(_ sender: Any) {
+        
+        UIApplication.shared.open(URL(string : "http://www.ipn.mx/cca/movilidad/Documents/ALUMNOS-IPN/MOVILIDAD-NACIONAL-NIVEL-SUPERIOR/CONVOCATORIAMOVNALS20182.pdf")! as URL, options: [:], completionHandler: nil)
+        
+    }
+    @IBAction func resultadosButton(_ sender: Any) {
+        
+        UIApplication.shared.open(URL(string : "http://www.ipn.mx/cca/movilidad/Documents/ALUMNOS-IPN/MOVILIDAD-NACIONAL-NIVEL-SUPERIOR/RESULTADOSNAL.pdf")! as URL, options: [:], completionHandler: nil)
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     

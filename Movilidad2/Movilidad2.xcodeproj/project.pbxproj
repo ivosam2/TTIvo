@@ -17,6 +17,7 @@
 		849C187B209FBEA900F3B8D1 /* GestionarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C187A209FBEA900F3B8D1 /* GestionarViewController.swift */; };
 		849C1880209FCF9600F3B8D1 /* Formulario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C187F209FCF9600F3B8D1 /* Formulario.swift */; };
 		849C1882209FE8AF00F3B8D1 /* ConsultarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C1881209FE8AF00F3B8D1 /* ConsultarViewController.swift */; };
+		849C188420A073CA00F3B8D1 /* ConsultarAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C188320A073CA00F3B8D1 /* ConsultarAdminViewController.swift */; };
 		F915B0666275EC1433E2D217 /* Pods_Movilidad2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C187BBBF34C7F6E7E9D43CD /* Pods_Movilidad2.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		849C187A209FBEA900F3B8D1 /* GestionarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestionarViewController.swift; sourceTree = "<group>"; };
 		849C187F209FCF9600F3B8D1 /* Formulario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formulario.swift; sourceTree = "<group>"; };
 		849C1881209FE8AF00F3B8D1 /* ConsultarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultarViewController.swift; sourceTree = "<group>"; };
+		849C188320A073CA00F3B8D1 /* ConsultarAdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultarAdminViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				844F2E90209FA0A600786D61 /* ViewController.swift */,
 				849C187A209FBEA900F3B8D1 /* GestionarViewController.swift */,
 				844F2E92209FA0A600786D61 /* Main.storyboard */,
+				849C188320A073CA00F3B8D1 /* ConsultarAdminViewController.swift */,
 				849C1881209FE8AF00F3B8D1 /* ConsultarViewController.swift */,
 				849C1878209FA7D400F3B8D1 /* LogInViewController.swift */,
 				844F2E95209FA0A700786D61 /* Assets.xcassets */,
@@ -256,6 +259,7 @@
 				844F2E8F209FA0A600786D61 /* AppDelegate.swift in Sources */,
 				849C1879209FA7D400F3B8D1 /* LogInViewController.swift in Sources */,
 				849C187B209FBEA900F3B8D1 /* GestionarViewController.swift in Sources */,
+				849C188420A073CA00F3B8D1 /* ConsultarAdminViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
