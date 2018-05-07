@@ -14,6 +14,9 @@
 		844F2E99209FA0A700786D61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844F2E97209FA0A700786D61 /* LaunchScreen.storyboard */; };
 		844F2EA1209FA0BD00786D61 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 844F2EA0209FA0BD00786D61 /* GoogleService-Info.plist */; };
 		849C1879209FA7D400F3B8D1 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C1878209FA7D400F3B8D1 /* LogInViewController.swift */; };
+		849C187B209FBEA900F3B8D1 /* GestionarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C187A209FBEA900F3B8D1 /* GestionarViewController.swift */; };
+		849C1880209FCF9600F3B8D1 /* Formulario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C187F209FCF9600F3B8D1 /* Formulario.swift */; };
+		849C1882209FE8AF00F3B8D1 /* ConsultarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C1881209FE8AF00F3B8D1 /* ConsultarViewController.swift */; };
 		F915B0666275EC1433E2D217 /* Pods_Movilidad2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C187BBBF34C7F6E7E9D43CD /* Pods_Movilidad2.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +33,9 @@
 		844F2E9A209FA0A700786D61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		844F2EA0209FA0BD00786D61 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		849C1878209FA7D400F3B8D1 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		849C187A209FBEA900F3B8D1 /* GestionarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestionarViewController.swift; sourceTree = "<group>"; };
+		849C187F209FCF9600F3B8D1 /* Formulario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formulario.swift; sourceTree = "<group>"; };
+		849C1881209FE8AF00F3B8D1 /* ConsultarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +80,12 @@
 		844F2E8D209FA0A600786D61 /* Movilidad2 */ = {
 			isa = PBXGroup;
 			children = (
+				849C187C209FCE0700F3B8D1 /* Model */,
 				844F2E8E209FA0A600786D61 /* AppDelegate.swift */,
 				844F2E90209FA0A600786D61 /* ViewController.swift */,
+				849C187A209FBEA900F3B8D1 /* GestionarViewController.swift */,
 				844F2E92209FA0A600786D61 /* Main.storyboard */,
+				849C1881209FE8AF00F3B8D1 /* ConsultarViewController.swift */,
 				849C1878209FA7D400F3B8D1 /* LogInViewController.swift */,
 				844F2E95209FA0A700786D61 /* Assets.xcassets */,
 				844F2E97209FA0A700786D61 /* LaunchScreen.storyboard */,
@@ -84,6 +93,14 @@
 				844F2EA0209FA0BD00786D61 /* GoogleService-Info.plist */,
 			);
 			path = Movilidad2;
+			sourceTree = "<group>";
+		};
+		849C187C209FCE0700F3B8D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				849C187F209FCF9600F3B8D1 /* Formulario.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		9610A36974DC1FC8E5000402 /* Frameworks */ = {
@@ -233,9 +250,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849C1882209FE8AF00F3B8D1 /* ConsultarViewController.swift in Sources */,
+				849C1880209FCF9600F3B8D1 /* Formulario.swift in Sources */,
 				844F2E91209FA0A600786D61 /* ViewController.swift in Sources */,
 				844F2E8F209FA0A600786D61 /* AppDelegate.swift in Sources */,
 				849C1879209FA7D400F3B8D1 /* LogInViewController.swift in Sources */,
+				849C187B209FBEA900F3B8D1 /* GestionarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

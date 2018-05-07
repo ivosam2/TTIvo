@@ -40,6 +40,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Convocatorias de Movilidad" id="fYb-T5-IAs"/>
+                    <connections>
+                        <outlet property="convocatoriasTableView" destination="4gD-yS-jv1" id="WTg-nz-iGS"/>
+                        <segue destination="4XF-a6-EO0" kind="show" identifier="goToSelection" id="Wi0-aX-RNN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -87,12 +91,81 @@
                     <connections>
                         <outlet property="emailTextField" destination="g5r-ea-IA4" id="frG-FH-5w5"/>
                         <outlet property="passwdTextField" destination="i0w-5Z-d93" id="uwf-BY-GH5"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToConvocatorias" id="Gw8-iX-mTf"/>
+                        <segue destination="BuL-7g-hCM" kind="show" identifier="goToConvocatorias" id="Eyu-0H-G6U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aNN-F3-eZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1664" y="103"/>
+        </scene>
+        <!--Gestionar Convocatorias-->
+        <scene sceneID="Vvk-sk-LQb">
+            <objects>
+                <viewController id="BuL-7g-hCM" customClass="GestionarViewController" customModule="Movilidad2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QbE-dT-7qX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mrR-0k-Qgk">
+                                <rect key="frame" x="0.0" y="64" width="414" height="631"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yn-oS-og5">
+                                <rect key="frame" x="0.0" y="688" width="414" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Salir">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="salirBtn:" destination="BuL-7g-hCM" eventType="touchUpInside" id="CJM-8z-n9n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="alW-XJ-Ugj"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Gestionar Convocatorias" id="uzm-Tz-NLH">
+                        <barButtonItem key="rightBarButtonItem" title="Agregar" id="STg-9K-2Ba">
+                            <connections>
+                                <action selector="agregarBtn:" destination="BuL-7g-hCM" id="XfV-m1-qqm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="gestionarConvocatoriasTableView" destination="mrR-0k-Qgk" id="NSD-bj-qhm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rZH-WE-c0h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2466.666666666667" y="102.71739130434783"/>
+        </scene>
+        <!--Consulta de Convocatoria-->
+        <scene sceneID="0bQ-hW-uY9">
+            <objects>
+                <viewController id="4XF-a6-EO0" customClass="ConsultarViewController" customModule="Movilidad2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ecb-xb-nAf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E8Z-BG-4rq">
+                                <rect key="frame" x="182" y="82" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="mo0-nY-P8Y"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Consulta de Convocatoria" id="irW-4y-Use"/>
+                    <connections>
+                        <outlet property="tipoImageView" destination="E8Z-BG-4rq" id="4hB-ou-i7b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y7n-T4-fdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857.97101449275374" y="808.69565217391312"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bHm-LD-7eZ">
@@ -113,7 +186,4 @@
             <point key="canvasLocation" x="111" y="103"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="iLp-Mc-mev"/>
-    </inferredMetricsTieBreakers>
 </document>
